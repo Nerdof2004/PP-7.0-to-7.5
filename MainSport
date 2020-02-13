@@ -1,0 +1,23 @@
+/*Design and implement a set of classes that keeps track of sports statistics.
+Have each low-level class represent a specific sport(basketball,
+soccer, tennis or your choice). Tailor the services of the classes
+to the sport in question and move common attributes to the higher-level classes.
+Create a main driver class to instantiate several of the classes.
+
+Attributes to consider: score, equipment, teams, rules or anything else that comes to mind.
+*/
+
+public class MainSport
+{
+    public static void main (String[] args)
+    {
+        Soccer soccer = new Soccer("Soccer", "field ", "Ball",31, 11);
+        Track track  = new Track ("Track", "racing track", "gym/none", "First place","Sprint spikes", 0);
+        Basketball basketball = new Basketball("Basketball", "basketball court", "Ball and hoops", 21, " a Jersey and shorts");
+
+        System.out.println("\n---------------------------\n" + soccer);
+        System.out.println("\n---------------------------\n" + track);
+        System.out.println("\n---------------------------\n" + basketball);
+
+    }
+}
