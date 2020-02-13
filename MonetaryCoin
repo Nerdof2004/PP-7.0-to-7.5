@@ -1,0 +1,75 @@
+/*Design and implement a class called MonetaryCoin that
+is derived from the class Coin.  Store a value in the
+monetary coin that represents its value (how much the coin
+is worth) and add a method that returns its value.
+Create a main driver class to instantiate and compute the sum
+of several MonetaryCoin objects.  Show that a monetary coin inherits
+its parent’s ability to be flipped.
+*/
+
+
+// Saelee Johnson
+public class MonetaryCoin
+{
+    public static void main(String[] args)
+    {
+        final int NUM_FLIPS = 1000;
+        int heads = 0, tails =0;
+
+        CoinTwo dime = new CoinTwo(10);
+        CoinTwo nickel = new CoinTwo(5);
+        CoinTwo quarter = new CoinTwo(25);
+        CoinTwo penny = new CoinTwo(1);
+
+        // coin flip for dime
+        for(int count = 1 ; count <= NUM_FLIPS; count++)
+        {
+            dime.flip();
+
+            if(dime.isHeads())
+                heads++;
+            else
+                tails++;
+        }
+// coin flip for nickel
+        for(int count = 1 ; count <= NUM_FLIPS; count++)
+        {
+            nickel.flip();
+
+            if(nickel.isHeads())
+                heads++;
+            else
+                tails++;
+        }
+// coin flip for quarter
+        for(int count = 1 ; count <= NUM_FLIPS; count++)
+        {
+            quarter.flip();
+
+            if(quarter.isHeads())
+                heads++;
+            else
+                tails++;
+        }
+// coin flip for penny
+        for(int count = 1 ; count <= NUM_FLIPS; count++)
+        {
+            penny.flip();
+
+            if(penny.isHeads())
+                heads++;
+            else
+                tails++;
+        }
+
+        // the output
+        System.out.println("The number flips: " + NUM_FLIPS);
+        System.out.println("The number of heads: " + heads );
+        System.out.println("The number if tails: " + tails);
+        System.out.println("The value of this coin is: " + dime + "\n");
+        System.out.println("The value of this coin is: " + nickel + "\n");
+        System.out.println("The value of this coin is: " + quarter + "\n");
+        System.out.println("The value of this coin is: " + penny + "\n");
+
+    }
+}
