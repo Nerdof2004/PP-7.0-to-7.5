@@ -1,0 +1,23 @@
+public class CoinTwo extends Coin
+{
+    private int value;
+
+    public CoinTwo(int value)
+    {
+        this.value = value;
+    }
+
+    public int getValue()
+    {
+        return value;
+    }
+
+    public String toString()
+    {
+       String  output = "" ;
+
+       output += value;
+
+       return output;
+    }
+}
