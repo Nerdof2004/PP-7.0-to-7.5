@@ -1,0 +1,18 @@
+public class twilight extends BookDriver
+{
+
+    public twilight(int pages, String author, String genre, int produced)
+    {
+        super(pages, author, genre, produced);
+
+    }// end full constructer with call to super
+
+    public String toString()
+    {
+        String output = super.toString();
+
+        return output;
+    }// end of toString
+
+
+}
