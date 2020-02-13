@@ -1,0 +1,19 @@
+public class Basketball extends Sport
+{
+    private String clothes;
+
+    public Basketball(String sportName, String Court, String equipment, int score, String clothes)
+    {
+        super(sportName, Court, equipment, score);
+        this.clothes = clothes;
+
+    }// end of constructer
+
+    public String toString()
+    {
+        String output = super.toString() + "\nThe clothes worn are " + clothes;
+
+        return output;
+    }
+
+}// end of class
