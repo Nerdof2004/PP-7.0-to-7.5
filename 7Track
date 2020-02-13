@@ -1,0 +1,21 @@
+public class Track extends Sport
+{
+    private String shoes;
+private String winner;
+    public Track(String sportName, String Court, String equipment, String winner, String shoes, int score)
+    {
+        super(sportName, Court, equipment, score);
+        this.shoes = shoes;
+        this.winner = winner;
+    }// end of constructer
+
+public String toString()
+{
+    String output = super.toString() + "\nThe shoes you wear are " + shoes;
+
+    return output;
+}
+
+
+
+}// end of class
