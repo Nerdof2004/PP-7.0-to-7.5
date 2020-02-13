@@ -1,0 +1,24 @@
+public class MainBook
+{
+    public static void main(String[] args)
+    {
+
+BookDriver drSeuss = new BookDriver(10,"Dr. Seuss", "comedy/poetry", 1960);
+BookDriver twilight = new BookDriver (500, "Stephenie Meyer", "Fantasy Fiction", 2005);
+
+        int[] arrayOfInts = new int[5]; // and example of how to instantiate an array
+        BookDriver[]  book = new BookDriver[5]; //Starting to create an array of pets
+        book[0] = drSeuss;
+        book[1] = twilight;
+
+        for( int i = 0; i < book.length; i++)
+        {
+            System.out.println(book[i]);
+        }
+
+
+//System.out.println(drSeuss);
+//System.out.println("\n" + twilight);
+    }// end main class
+
+}// end class
