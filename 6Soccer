@@ -1,0 +1,18 @@
+public class Soccer extends Sport
+{
+    private int players;
+
+    public Soccer (String sportName, String Court, String equipment, int score, int players)
+    {
+        super(sportName, Court, equipment, score);
+        this.players = players;
+    }
+
+    public String toString()
+    {
+        String output = super.toString() + "\nAmount of players: " + players;
+
+
+        return output;
+    }// end of toString
+}// end of soccer class
