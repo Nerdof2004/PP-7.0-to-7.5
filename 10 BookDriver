@@ -1,0 +1,38 @@
+//Design and implement a set of classes that define types of reading material
+//        (i.e. novels, magazines, technical journals, etc.).
+//        Include data values that describe the material, such as the number of pages, author,
+//        publisher, etc.  Consider using a parent (abstract) class to simplify your design.
+//        In each concrete class, include appropriate methods including a toString that will
+//        print an appropriate message.
+//        Create a main driver class to instantiate several of the classes.
+//        Create an array of the works and output it.
+
+
+
+public class BookDriver
+{
+protected int pages;
+protected String author;
+protected String genre;
+protected int produced;
+
+public BookDriver(int pages, String author, String genre, int produced)
+{
+    this.pages = pages;
+    this.author = author;
+    this.genre = genre;
+    this.produced = produced;
+}
+
+public String toString()
+{
+    String output = "Pages: " + pages;
+    output += "\nAuthor: " + author;
+    output += "\ngenre: " + genre;
+    output += "\nproduced: " + produced;
+
+
+    return output;
+}// end of toString
+
+}// end of abstract class
